@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your company’s landing page for new customers. Learn more about our services, contact us, and join us today!">
+    <meta name="author" content="Your Company Name">
+    <title>Your Company - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Your Company</h1>
+        <p>Discover the best solutions for your business today.</p>
+        <a href="#contact" class="cta-btn">Contact Us</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+    <h2>Our Features</h2>
+    <div class="feature-cards">
+        <div class="feature-card">
+            <h3>Responsive Design</h3>
+            <p>Our websites look great on any device, from desktop to mobile.</p>
+        </div>
+        <div class="feature-card">
+            <h3>SEO Optimized</h3>
+            <p>We build SEO-friendly websites that help you rank higher on search engines.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Custom Solutions</h3>
+            <p>We offer tailor-made solutions that meet your business's unique needs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+</footer>
+
+<!-- JavaScript for Form Submission (Optional) -->
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thank you for contacting us!');
+        // Reset form after submission
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
